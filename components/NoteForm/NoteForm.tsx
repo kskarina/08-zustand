@@ -5,7 +5,7 @@ import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { useSyncExternalStore, type ChangeEvent } from 'react';
 
 import css from './NoteForm.module.css';
-import { createNote } from '@/lib/api/notes';
+import { createNote } from '@/lib/api';
 import { useNoteDraftStore } from '@/lib/store/noteStore';
 import type { NoteTag } from '@/types/note';
 

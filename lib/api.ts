@@ -1,5 +1,12 @@
+import axios from 'axios';
 import type { NewNote, Note } from '@/types/note';
-import { notesApi } from './api';
+
+const notesApi = axios.create({
+  baseURL: 'https://notehub-public.goit.study/api',
+  headers: {
+    Authorization: `Bearer ${process.env.NEXT_PUBLIC_NOTEHUB_TOKEN}`,
+  },
+});
 
 interface FetchNotesResponse {
   notes: Note[];

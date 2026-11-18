@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { fetchNotes } from '@/lib/api/notes';
+import { fetchNotes } from '@/lib/api';
 import {
   dehydrate,
   HydrationBoundary,
